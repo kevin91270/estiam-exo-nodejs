@@ -9,6 +9,7 @@ const customerSchema = new mongoose.Schema({
 
 });
 
+
 class Customer {
     constructor(first_name, last_name, email){
 
@@ -16,7 +17,7 @@ class Customer {
         this.first_name = first_name;
         this.last_name = last_name;
         this.email = email;
-        
+
     }
 }
 

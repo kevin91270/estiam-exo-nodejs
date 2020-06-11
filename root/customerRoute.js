@@ -42,6 +42,7 @@ router.post('/add', (req, res) => {
 
 });
 
+
 //PUT
 router.put('/update/:id', (req, res) => {
 
@@ -58,7 +59,7 @@ router.delete('/delete/:id', (req, res) => {
     var id = req.params.id;
     var customerService = new CustomerService(req, res);
     customerService.delete(id);
-    
+
 });
 
 module.exports = router;

@@ -40,7 +40,7 @@ class BookService{
         });
     }
 
-    update(bookUpdate){
+    update(){
         var id = this.req.params.id;
         Book.findById(id, (err, putbook) => {
             if(err){

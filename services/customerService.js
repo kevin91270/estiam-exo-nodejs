@@ -40,7 +40,7 @@ class CustomerService{
         });
     }
 
-    update(customerUpdate){
+    update(){
         var id = this.req.params.id;
         Customer.findById(id, (err, putcustomer) => {
             if(err){

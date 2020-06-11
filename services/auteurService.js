@@ -40,7 +40,8 @@ class AuteurService{
         });
     }
 
-    update(auteurUpdate){
+
+    update(){
         var id = this.req.params.id;
         Auteur.findById(id, (err, putauteur) => {
             if(err){
